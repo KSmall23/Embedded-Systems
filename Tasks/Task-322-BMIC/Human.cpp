@@ -16,6 +16,7 @@ void displayHuman(const Human* h) {
         printf("*");
     }
     printf("\n");
+   
 }
 
 static void calculateHumanBMI(Human* h) {
