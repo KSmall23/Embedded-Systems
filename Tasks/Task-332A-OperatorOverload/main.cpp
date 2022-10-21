@@ -84,9 +84,17 @@ public:
     }
     bool operator==(DoubleNumber& u)
     {
+        if (this->getValue() == u.getValue()) 
+        {
+          return true;
+        }
         // Return a true if u is equal to `this`
         // ** TO BE DONE BY THE STUDENT **
-        return false;
+        else 
+        {
+         return false;
+        }
+        
     }
 
     operator double() {
@@ -112,6 +120,10 @@ int main()
 
     DoubleNumber sum = (n0 + n1 + n2 + n3);
     cout << sum << endl;
+    if (n3 == n2)
+    {
+        cout<<"bool work"<<endl;
+    }
 
     while (true) {
 
