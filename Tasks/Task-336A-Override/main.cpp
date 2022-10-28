@@ -25,7 +25,7 @@ int main()
     cout << c1.asDoubleNumber().asString() << endl;
 
     //TODO - write an overloaded + operator
-    DoubleNumber sum1 = c0 + c1 + d0 + d1;
+    ComplexNumber sum1 = c0 + c1;
     cout << sum1 << endl;
 
     while (true) {

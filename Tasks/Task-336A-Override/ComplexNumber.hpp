@@ -1,7 +1,9 @@
 #ifndef __COMPLEX_NUMBER__
 #define __COMPLEX_NUMBER__
+#include <iostream>
 #include "DoubleNumber.hpp"
 #include <string>
+using namespace std;
 
 class ComplexNumber : public DoubleNumber {
 private:
@@ -62,11 +64,17 @@ public:
     // Override + in the parent class
     ComplexNumber operator+(ComplexNumber& u) {
         ComplexNumber result;
+        result._imag = this->_imag + u._imag;
+        result._real = this->_real + u._real;
+
 
         //TO BE DONE
-
+        
         return result;
     }
+
+
+
 };
 
 #endif
